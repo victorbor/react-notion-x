@@ -186,6 +186,7 @@ export function Asset({
     block.type === 'codepen' ||
     block.type === 'drive' ||
     block.type === 'replit'
+    block.type === 'rutube'
   ) {
     if (
       block.type === 'video' &&
@@ -198,6 +199,7 @@ export function Asset({
       !source.includes('videoask') &&
       !source.includes('getcloudapp') &&
       !source.includes('tella')
+      !source.includes('rutube')
     ) {
       style.paddingBottom = undefined
 
